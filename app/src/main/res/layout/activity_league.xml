@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.elano.jessie.swoosh.LeagueActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/desired_league_bg"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/ivSwooshImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvDesiredLeague"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/text_desired_league"
+        android:textSize="@dimen/activity_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ivSwooshImage"/>
+
+    <Button
+        android:id="@+id/btnMen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="@string/text_button_men"
+        android:textAllCaps="false"
+        android:background="@drawable/button_border"
+        android:layout_below="@id/tvDesiredLeague"/>
+
+    <Button
+        android:id="@+id/btnWomen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMen"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:text="@string/text_button_women"
+        android:textAllCaps="false"
+        android:background="@drawable/button_border"/>
+
+    <Button
+        android:id="@+id/btnCoEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWomen"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:text="@string/text_button_co_ed"
+        android:textAllCaps="false"
+        android:background="@drawable/button_border"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="@string/text_button_next"
+        android:background="@drawable/button_border"
+        android:onClick="next"/>
+
+    <TextView
+        android:id="@+id/tvImAText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCoEd"
+        android:layout_marginTop="30dp"
+        android:text="@string/text_skill_description"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvTextHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvImAText"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
